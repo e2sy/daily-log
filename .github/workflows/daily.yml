@@ -1,6 +1,8 @@
 name: Daily log
 
 on:
+  push:
+    branches: [main]
   schedule:
     # Twice daily for reliability — one landing run is enough for the day
     - cron: "37 3 * * *"
